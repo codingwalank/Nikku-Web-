@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    position: relative;
+    user-select: none;
+}
+
+.logo{
+    font-size: 33px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo i{
+    color: #ffa500;
+}
+
+nav ul li{
+    margin: 0px 5px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px ;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 8px 10px;
+    border-radius: 7px;
+    transition: all 0.4s ease;
+}
+
+nav ul li a:hover,nav ul li a.active{
+    /* background-color: white; */
+    color: #ffa500;
+}
+
+.menu-button{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+/***************** main content******************************* */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-size: 100%;
+}
+
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+/* ============ HERO SECTION ============= */
+/* dark mode */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {box-sizing: border-box;}
+
+
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1, body.dark .support a {color: #fff;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+/*  Support me if you like it */
+.support {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+    z-index: 1;
+    position: fixed;
+}
+
+.support a {
+  color: #292c35;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+  margin-top: -10px;
+}
+
+.support a:hover{
+  transform: scale(1.1);
+}
+/* dark mode end */
+.creative-hero--section{
+	position: relative;
+	overflow: hidden;
+	height: 625px;
+}
+.creative-hero--section .bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+}
+.creative-hero--section .bg-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url(https://imgpanda.com/upload/ib/rn73B7bqty.png);
+	background-position: 0 0;
+	background-size: 56.5% 100%;
+	background-repeat: no-repeat;
+	animation: fadeIn 0.5s ease-in-out 0.3s forwards;
+}
+.auto-container {
+	max-width: 1310px;
+}
+
+.auto-container {
+	position: static;
+	padding: 0 15px;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+.creative-hero--section .content-box {
+	position: relative;
+	max-width: 540px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	animation: fadeInUp 1s ease-in-out 0.6s forwards;
+}
+.creative-hero--section .content-box .hero-subtitle {
+	display: block;
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: .8px;
+	margin-bottom: 33px;
+	opacity: 0;
+	animation: fadeInUp 0.6s ease-in-out 0.6s forwards;
+}
+.creative-hero--section .content-box .hero-title {
+	color: #fff;
+	line-height: 1.1em;
+	letter-spacing: -3px;
+	text-transform: capitalize;
+	margin-bottom: 28px;
+	font-size: 75px;
+	font-weight: 600;
+	opacity: 0;
+	animation: fadeInUp 0.6s ease-in-out 0.9s forwards;
+}
+.creative-hero--section .content-box .hero-desc {
+	color: #fff;
+	margin-bottom: 40px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+	opacity: 0;
+	animation: fadeInUp 0.6s ease-in-out 1.2s forwards;
+}
+.content-box .btn-box{
+	opacity: 0;
+	animation: fadeInUp 0.6s ease-in-out 1.6s forwards;
+}
+.content-box .btn-box .hero-cta {
+	position: relative;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 20px 40px;
+	font-weight: 600;
+	overflow: hidden;
+	color: #fff;
+	background: #134cb3;
+	letter-spacing: .8px;
+	border-radius: 7px;
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: center;
+	text-align: center;
+	white-space: nowrap;
+	transition: all .3s ease;
+}
+
+.content-box .btn-box .hero-cta:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	content: "";
+	border-radius: 7px;
+	transform: scaleX(0);
+	transform-origin: top right;
+	transition: transform .5s cubic-bezier(.86, 0, .07, 1);
+	background-color: #fff;
+}
+
+.content-box .btn-box .hero-cta:hover {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+	color: #16243e;
+}
+
+.content-box .btn-box .hero-cta:hover:before {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.btn-box .hero-cta .cta-title{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.btn-box .hero-cta .cta-title i{
+	position: relative;
+	display: block;
+	margin-left: 10px;
+}
+
+
+/* social icons */
+
+.social-icons i{
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 20px;
+    margin-top: 15px;
+    transition: all 0.4s ease;
+    
+}
+
+.fa-whatsapp:hover{
+    color: #25D366;
+}
+
+.fa-instagram:hover{
+    color: #C13584;
+}
+
+.fa-youtube:hover{
+    color: red;
+}
+
+.fa-telegram:hover{
+    color: #4c9bf6;
+}
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 40px, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+/* ======== Sticky Footer ========= */
+  .sticky-footer{
+       position: fixed;
+    width: 100%;
+        background: #333;
+    z-index: 999;
+    bottom: 0;
+  }
+.sticky-footer .footer-row{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    padding-right: 15px;
+}
+.creditd a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+        font-size: 16px;
+}
+.social ul{
+      display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    column-gap: 10px;
+    align-items: center;
+}
+.social ul li a{
+     display: flex;
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.social ul li a img{
+       max-width: 20px;
+}
+
+
+
+
+
+/* Responsive section start header here */
+
+@media (max-width:940px ){
+
+    /* for logo */
+
+    .logo{
+        font-size: 25px;
+        margin-left: -70px;
+    }
+
+    .logo i{
+        font-size: 25px;
+    }
+
+    nav{
+        height: 60px;
+    }
+
+    nav .menu-button i{
+        display: block;
+    }
+
+    #click:checked ~ .menu-button i:before{
+        contain: "\00d7";
+    }
+    nav ul{
+        position: fixed;
+        z-index: 3;
+        top: 60px;
+        left: -100%;
+        background-color: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.4s ease;
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+    nav ul li{
+        margin: 40px 0;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover,nav ul li a.active{
+        background: none;
+        color: cyan;
+    }
+    .menu-button{
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        display: block;
+    }
+}
+
+/* main content responsive code */
+/* =================== RESPONSIVE IPAD PRO ============================= */
+@media (max-width: 1366px) {
+    .creative-hero--section .bg-overlay {
+        background-image: none;
+        background-color: #16243e;
+        mix-blend-mode: hard-light;
+    }
+}
+/* =================== RESPONSIVE IPAD  ============================= */
+@media (max-width: 991px) {
+	.creative-hero--section{
+        position: absolute;
+        top: 60px;
+		height: 663px;
+    padding: 130px 0px;
+	}
+
+    .creative-hero--section .content-box{
+    	max-width: 100%;
+    	    text-align: center;
+    }
+}
+/* =================== RESPONSIVE IPHONE  ============================= */
+@media (max-width: 575px) {
+    .creative-hero--section .content-box .hero-title {
+        font-size: 46px;
+    }
+    .creative-hero--section .content-box .hero-desc{
+    	font-size: 15px;
+    }
+    .footer-basic{
+        margin-top: 650px;
+    }
+}
+
+
+
+.footer-basic {
+    width: 100%;
+    padding:40px 0;
+    background-color:#1b1b1b !important;
+    color:white;
+    z-index: 5;    
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+    display: inline-block;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:40px;
+    text-align:center;
+    font-size:18px;
+    color:#aaa;
+    margin-bottom:0;
+  }
